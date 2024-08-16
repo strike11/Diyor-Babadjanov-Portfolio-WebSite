@@ -1,0 +1,364 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+/* СКРОЛЛ БАР */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* НАЧАЛО ГЛАВНОЙ СТРАНИЦЫ */
+.container {
+  background: url(img/bg2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.main {
+  animation: textmain;
+  animation-duration: 2.5s;
+  margin-left: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main_skills {
+  justify-content: left;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-right: 50px;
+}
+
+.main_text {
+  width: 100%;
+  line-height: 45px;
+  text-align: left;
+}
+
+.hello_txt {
+  text-align: left;
+  font-size: 25px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+
+.hello_txt:hover {
+  font-size: 30px;
+  color: #9f40ff;
+}
+
+.name {
+  color: #454545;
+  text-align: left;
+  font-size: 70px;
+}
+
+.name_2 {
+  color: #6300d3;
+  text-align: left;
+  font-size: 70px;
+  background-color: transparent;
+}
+
+.buttons {
+  width: 300px;
+  text-align: left;
+}
+
+.btn_small {
+  margin: 5px;
+  background-color: #6300d3;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  border: solid 0;
+  font-size: 25px;
+  padding: 10px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.btn_small:hover {
+  padding: 15px;
+}
+
+.portrait {
+  max-width: 100%;
+  height: 500px;
+  float: right;
+  width: 500px;
+}
+
+/* СКИЛЛЫ */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill_item {
+  background-color: #ffffffa6;
+  margin-bottom: 20px;
+  display: grid;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.skill_item:hover {
+  box-shadow: 0 4px 8px #9834eb;
+}
+
+.skill_ico {
+  padding-top: 20px;
+  width: 100px;
+  height: 110px;
+}
+
+/* Портфолио */
+.portfolio {
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.portfolio_item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.portfolio_item img {
+  padding-top: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.portfolio_item p {
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio_item:hover {
+  transform: scale(1.05);
+}
+
+.about_port {
+  font-size: 10px;
+  text-align: center;
+}
+
+.link_btn {
+  text-align: center;
+  background-color: #7e19c2;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 3px;
+}
+
+.btn_social {
+  margin: 4px;
+  background-color: #4b108f;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  border: solid 0px;
+  font-size: 25px;
+  padding: 10px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.btn_social:hover {
+  padding: 20px;
+}
+
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes textmain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+/* Медиа запросы */
+@media (max-width: 1500px) {
+  .main {
+    margin-left: 50px;
+  }
+  .buttons {
+    text-align: left;
+    padding: 3px;
+  }
+  .btn_small {
+    margin: 1px;
+  }
+}
+.about_text_div{
+  width: 600px;
+}
+@media (max-width: 747px) {
+  .main {
+    margin-left: 30px;
+  }
+  .main_text {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 459px) {
+  .main {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .about_text_div {
+    width: 400px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .name_2 {
+    background-color: hsl(0deg 0% 100% / 65%);
+  }
+}
+
+@media (max-width: 1500px) {
+  .about_txt {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1129px) {
+  .about_txt {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 905px) {
+  .about_txt {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .container {
+    background: url(img/bg2.png);
+  }
+}
+
+@media (max-width: 865px) {
+  .skill_item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio_item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 571px) {
+  .about_txt {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio_item {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 459px) {
+  .main_text {
+    line-height: 37px;
+  }
+  .name {
+    font-size: 55px;
+  }
+  .name_2 {
+    font-size: 55px;
+  }
+  .hello_txt {
+    font-size: 20px;
+  }
+}
