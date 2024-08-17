@@ -19,6 +19,7 @@
     <div class="main">
       <!-- Главная -->
       <div class="main_text" id="mainSection">
+        <img src="img/Portrait2.png" class="mobile_img">
         <h3><span class="hello_txt" id="wrutt">Hello!</span></h3>
         <p><span class="name">I'm Diyor </span><span class="name_2" id="name_2"></span></p>
         <div class="buttons">
@@ -31,15 +32,17 @@
 
       <!--Обо мне-->
       <div class="about" style="display: none" id="aboutSection">
-        <h1 class="about">About Me</h1>
+        <h1 class="abouth1">About Me</h1>
         <div class="about_text_div">
           <p><span class="about_txt">Hello! My name is Diyor Babadjanov.<br>
           I am originally from Uzbekistan. I fell in love with programming and computers when I was already 10 years old.<br> By the age of 11 I started learning Clickteam Fusion and developed my first simple game there.<br>I was inspired then, and all further game development was done in Unity. Since then I have published about 25 different games online.<br>
           At the age of 12, I started creating very simple web pages with HTML and CSS. I have had projects on a wide variety of topics to show my interest in constant development in coding and design.<br>
           All new knowledge and technologies are of extraordinary interest to me,<br>and my work is a reflection of this desire and achievements in this direction: welcome to my wonderful world of code and creativity!</span></p>
+          <h1 class="abouth1">Skills</h1>
           <div class="skill_item">
-            <img src="img/gamedev.png" alt="GameDev" class="skill_ico" width="20px" height="20px;">
-            <p style="font-size: 20px;">GameDev</p>
+            <img src="img/gamedev.png" alt="GameDev" class="skill_ico">
+            <p style="font-size: 25px;">GameDev (Unity Engine, C#)</p>
+
           </div>
           <div class="buttons">
             <button class="btn_small" onclick="showHome()"><i class="fa-solid fa-house"></i></button>
@@ -95,7 +98,7 @@
   <script type="text/javascript">
     var typed = new Typed('#name_2', {
   strings: ['Babadjanov'],
-  typeSpeed: 100,
+  typeSpeed: 200,
 });
   </script>
 </body>
