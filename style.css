@@ -1,0 +1,498 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Zen+Kurenaido&display=swap');
+
+/* СКРОЛЛ БАР */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* НАЧАЛО ГЛАВНОЙ СТРАНИЦЫ */
+.navigation_bar{
+display: flex;
+color: white;
+  width: 100%;
+  height: 100px;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  background-color: #00001E;
+}
+.navigation_bar a{
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  margin: 0 90px;
+
+}
+
+.navigation_bar a:hover{
+  text-shadow: #9000FFFF 4px 4px 0px;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+.logo{
+  filter: drop-shadow(0 0 0.75rem #8800FF);
+}
+.container {
+  background: url(img/bg2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.main {
+  animation: textmain;
+  animation-duration: 2.5s;
+  margin-left: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-grow: 1;
+}
+.mobile_img{
+  width: 300px;
+  height: auto;
+  display: none;
+}
+.main_skills {
+  justify-content: left;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-right: 50px;
+}
+
+.main_text {
+  width: 100%;
+  line-height: 45px;
+  text-align: left;
+}
+
+.hello_txt {
+  text-shadow: #a100ff63 0px 5px 0px;
+  color: #8F8F8F;
+  text-align: left;
+  font-size: 45px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+
+
+.name {
+  color: white;
+  text-align: left;
+  font-size: 70px;
+  text-shadow: #9000FFFF 0px 7px 0px;
+}
+
+.name_2 {
+  color: #6300d3;
+  text-align: left;
+  text-shadow: #2e0051bd 0px 7px 0px;
+  font-size: 70px;
+  background-color: transparent;
+}
+
+.buttons {
+  width: 300px;
+  text-align: left;
+}
+
+.btn_small {
+  font-family: "Pixelify Sans"; 
+  margin-right: 5px;
+  background-color: #3E00AB;
+  color: white;
+  text-decoration: none;
+  border: solid 0;
+  font-size: 35px;
+  padding: 10px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.btn_small:hover {
+  color: #dca7fa;
+  box-shadow: 8px 8px 0px #9834eb;
+}
+.about_txt{
+  font-size: 20px;
+}
+.abt{
+  padding: 20px;
+}
+.abouth1{
+  color: white;
+  text-align: left;
+}
+.abouth1 span{
+  background-color: #390088;
+  padding: 20px;
+}
+.portrait {
+  max-width: 100%;
+  height: 500px;
+  float: right;
+  width: 500px;
+}
+
+/* СКИЛЛЫ */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.skillsSection{
+  width: 100%;
+}
+.skill_item {
+  font-size: 10px;
+  color: white;
+  padding-left: 20px;
+  background-color: #130047;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  width: 90%;
+  height: 200px;
+  justify-content: left;
+  align-items: center;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.skill_item p{
+  font-size: 45px;
+}
+.skill_item:hover {
+  box-shadow: 8px 8px 0px #9834eb;
+}
+
+.skill_ico {
+  padding-right: 40px;
+  width: 120px;
+  height: 120px;
+}
+
+/* Портфолио */
+.portfolio {
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.portfolio_item {
+  color: white;
+  font-size: 30px;
+    background-color: #11004F;
+    margin-left: 15px;
+    margin: 8px;
+    flex: 1 1 calc(50% - 20px); /* Change from calc(33.333% - 20px) to calc(50% - 20px) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.6s;
+    text-align: center;
+    transition-timing-function: ease-out;
+}
+
+.items{
+  width:900px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.portfolio_item img {
+  padding-top: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.portfolio_item p {
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio_item:hover {
+  border: solid 1px #9000FF;
+  transform: scale(1.02);
+  box-shadow: 0 4px 0px #6A00FF;
+}
+
+.about_port {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.link_btn {
+  background-color: #3E00AB;
+  border: solid 1px #9000FF;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 7px;
+}
+.link_btn img{
+  padding-top: 0px;
+  width: 34px;
+  height: 34px;
+}
+
+.btn_social {
+  margin: 4px;
+  background-color: #4b108f;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  border: solid 0px;
+  font-size: 25px;
+  font-family: Pixelify Sans;
+  padding: 10px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.btn_social:hover {
+  color:#bb65ff;
+}
+
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes textmain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+.typed-cursor{
+  font-size: 70px;
+  color:#6300d3;
+  margin-left: 10px;
+  text-shadow: #2e0051bd 0px 7px 0px;
+}
+ .abt .typed-cursor {
+  text-shadow: #2e0051bd 0px 7px 0px;
+  font-size: 25px;
+  color:#6300d3;
+  margin-left: 10px;
+}
+.portfolio .buttons{
+  margin-top: 10px;
+text-align: left;
+}
+/* Медиа запросы */
+
+@media (max-width: 957px){
+  .items{
+    display: table-cell;
+  }
+}
+@media (max-width: 1500px) {
+  .main {
+  }
+  .buttons {
+    text-align: left;
+    padding: 3px;
+  }
+  .btn_small {
+    margin: 1px;
+  }
+}
+.about_text_div{
+  color: white;
+  background-color: #130047;
+  width: 50%;
+}
+@media (max-width: 747px) {
+  .main {
+    margin-left: 30px;
+  }
+  .main_text {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1700px) {
+  .about_text_div {
+    width: 400px;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1500px) {
+  .about_txt {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1300px){
+  .navigation_bar a{
+    font-size: 25px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1129px) {
+  .about_txt {
+    font-size: 13px;
+  }
+}
+@media (max-width: 905px) {
+  .skillsSection{
+    margin-right: 0;
+  }
+  .skill_item{
+    padding: 0;
+  }
+  .skill_item p{
+    font-size: 30px;
+  }
+  .about_txt {
+    font-size: 17px;
+  }
+  .container {
+    background: url(img/bg3.png);
+  }
+  .portfolio{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .about{
+  margin-top: 70px;
+  text-align: center;
+}
+.main{
+  justify-content: center;
+  align-items: center;
+}
+  .mobile_img{
+    display: block;
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media (max-width: 865px) {
+  .skill_item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    width:100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio_item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 571px) {
+  .about_txt {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio_item {
+    flex: 1 1 100%;
+  }
+  .navigation_bar a{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .abouth1{
+    font-size: 20px;
+  }
+}
+@media (max-width: 430px){
+  .abouth1{
+    font-size: 18px;
+  }
+}
+@media (max-width: 459px) {
+  .main_text {
+    line-height: 37px;
+  }
+  .name {
+    font-size: 55px;
+  }
+  .name_2 {
+    font-size: 55px;
+  }
+  .hello_txt {
+    font-size: 20px;
+  }
+}

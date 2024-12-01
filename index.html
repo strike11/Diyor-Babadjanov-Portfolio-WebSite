@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f4cdda3835.js" crossorigin="anonymous"></script>
+  <title>Diyor Babadjanov</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+</head>
+<body>
+  <nav class="navigation_bar">
+  <div class="logo"><img src="img/portfolio_logo.png" width="64px" height="64px"></div>
+</nav>
+  <div class="container" id="cont">
+    <div class="main">
+      <!-- Главная -->
+      <div class="main_text" id="mainSection">
+        <img src="img/Portrait2.png" class="mobile_img">
+        <h3><span class="hello_txt" id="wrutt">Hello!</span></h3>
+        <p><span class="name">I'm Diyor </span><span class="name_2" id="name_2"></span></p>
+        <button class="btn_small" onclick="showAbout() ; typeAbout()"> > START THE GAME!</button>
+        <div class="buttons">
+        </div>
+      </div>
+      <div class="about" style="display: none" id="aboutSection">
+        <div class="about_main">
+        <h1 class="abouth1"><span>About Me</span></h1>
+        <div class="about_text_div">
+          <p class="abt"><span class="about_txt" id="abouttxt"></span></p>
+          <button class="btn_small" onclick="showSkills()">PRESS HERE TO CONTINUE...</button>
+        </div>
+        </div>
+      </div>
+      <div class="skillsSection" id="skillsSection" style="display : none;">
+          <h1 class="abouth1"><span>ㅤㅤSkillsㅤㅤ|ㅤㅤCharacter: Diyor </span></h1>
+          <div class="skill_item">
+            <img src="img/gamedev.png" alt="GameDev" class="skill_ico">
+            <p>GameDev (Unity Engine, C#)</p>
+          </div>
+          <div class="skill_item">
+            <img src="img/winforms.png" alt="WinForms" class="skill_ico">
+            <p>WinForms (C#)</p>
+          </div>
+            <div class="skill_item">
+            <img src="img/git.png" alt="VCS" class="skill_ico">
+            <p>Version Control System (Git,GitHub)</p>
+          </div>
+          <button class="btn_small" onclick="showPortfolio()">Continue...</button>
+          <p></p>
+        </div>
+      <!-- Портфолио -->
+      <div class="portfolio" style="display: none" id="portfolioSection">
+        <h1 class="abouth1"><span>Portfolio</span></h1>
+        <div class="items">
+          <div class="portfolio_item">
+          <img src="img/portfolio/innominate.webp" class="portfolio_img">
+          <p>Innominate</p>
+          <h4 class="about_port">Mobile horror game made on Unity</h4>
+          <a href="https://github.com/strike11/Innominate-Mobile"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio/omeganugget.png" class="portfolio_img">
+          <p>Omega Nugget - Runner</p>
+          <h4 class="about_port">Mobile runner game made on Unity</h4>
+          <a href="https://github.com/strike11/Omega-Nugget-Runner"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+          <div class="portfolio_item">
+          <img src="img/portfolio/harking.png" class="portfolio_img" >
+          <p>Harking</p>
+          <h4 class="about_port">Mobile 3D casual game made on Unity</h4>
+          <a href="https://github.com/strike11/Harking/tree/main"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio/math_teacher.webp" class="portfolio_img">
+          <p>Mathematic Teacher</p>
+          <h4 class="about_port">Mobile horror game made on Unity</h4>
+          <a href="https://github.com/strike11/Matematichka-Mobile-Horror-Game"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio/tunemorph.png" class="portfolio_img">
+          <p>TuneMorph</p>
+          <h4 class="about_port">An application that recommends movies and songs using Gemini AI</h4>
+          <a href="https://github.com/strike11/TuneMorph"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio/awarderpro.png" class="portfolio_img">
+          <p>AwarderPro</p>
+          <h4 class="about_port">AwarderPro is a program for generating and issuing certificates.</h4>
+          <a href="https://github.com/strike11/AwarderPro"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio/nanos_DOS.png" class="portfolio_img">
+          <p>NanOS (DOS-like OS)</p>
+          <h4 class="about_port">A simple OS written in c#</h4>
+          <a href="https://github.com/strike11/NanOS"><button class="link_btn"><i class="fa-brands fa-github fa-2x"></i></button></a>
+        </div>
+            <button class="btn_small" onclick="showLinks()">Continue...</button>
+    </div>
+      </div>
+      <!-- Контакты -->
+      <div class="contacts" style="display: none" id="contactsSection">
+        <h1 class="abouth1"><span>Links</span></h1>
+        <div class="cont_item">
+          <a href="https://github.com/strike11"><button class="btn_social"><i class="fa-brands fa-github"></i> GitHub</button></a>
+          <a href="https://www.instagram.com/striexinc/"><button class="btn_social"><i class="fa-brands fa-instagram"></i> Instagram</button></a>
+          <a href="https://www.threads.net/@striexinc"><button class="btn_social"><i class="fa-brands fa-threads"></i> Threads</button></a>
+          <br>
+          <a href="https://t.me/striexinc"><button class="btn_social"><i class="fa-brands fa-telegram"></i> Telegram 1</button></a>
+          <a href="https://t.me/babadjanov_dev"><button class="btn_social"><i class="fa-brands fa-telegram"></i> Telegram 2</button></a>
+          <a href="https://www.tiktok.com/@striexinc"><button class="btn_social"><i class="fa-brands fa-tiktok"></i> TikTok</button></a>
+        </div>
+        <br>
+        <a href="index.html"><button class="btn_small">The End</button></a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var typed = new Typed('#name_2', {
+  strings: ['Babadjanov'],
+  typeSpeed: 200,
+});
+function typeAbout(){
+  var typed2 = new Typed('#abouttxt', {
+  strings: ['Hello! My name is Diyor Babadjanov. I am originally from Uzbekistan. I fell in love with programming and computers when I was already 10 years old.<br> By the age of 11 I started learning Clickteam Fusion and developed my first simple game there.<br>I was inspired then, and all further game development was done in Unity. Since then I have published about 25 different games online.<br>At the age of 12, I started creating very simple web pages with HTML and CSS. I have had projects on a wide variety of topics to show my interest in constant development in coding and design.<br> All new knowledge and technologies are of extraordinary interest to me,<br>and my work is a reflection of this desire and achievements in this direction: welcome to my wonderful world of code and creativity!'],
+  typeSpeed: 2,
+});
+}
+    
+  </script>
+</body>
+</html>
