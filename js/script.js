@@ -1,8 +1,6 @@
-  var aboutost = new Audio('sound/story.mp3');
-    var skillsound = new Audio('sound/skills.mp3');
+
 function showAbout() {
- aboutost.play();
-  switchSection('aboutSection');
+switchSection('aboutSection');
 }
 
 function showPortfolio() {
@@ -17,10 +15,7 @@ function showHome() {
   switchSection('mainSection');
 }
 function showSkills(){
-aboutost.pause();
-aboutost.currentTime = 0;
-skillsound.play();
-  let element = document.getElementById("cont");
+ let element = document.getElementById("cont");
   switchSection('skillsSection');
   element.style.backgroundImage = "url('img/bg.png')";
 }
