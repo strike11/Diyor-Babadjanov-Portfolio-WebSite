@@ -1,1 +1,0 @@
-# Diyor-Babadjanov-Portfolio-WebSite
